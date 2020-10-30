@@ -1,1 +1,0 @@
-../../../AVOSCloudLiveQuery/AVOS/AVOSCloudLiveQuery/AVLiveQuery.h
