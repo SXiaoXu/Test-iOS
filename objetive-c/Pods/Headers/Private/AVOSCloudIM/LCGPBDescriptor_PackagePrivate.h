@@ -1,0 +1,1 @@
+../../../AVOSCloudIM/AVOS/AVOSCloudIM/Protobuf/LCGPBDescriptor_PackagePrivate.h

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIImageMessageViewController">
+            <connections>
+                <outlet property="positionLabel" destination="pTW-ij-Kth" id="MlJ-MT-KoG"/>
+                <outlet property="showImageView" destination="faP-Ud-QBl" id="vFU-NY-a0L"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNb-V6-OjN">
+                    <rect key="frame" x="40" y="80" width="62" height="30"/>
+                    <state key="normal" title="选择图片"/>
+                    <connections>
+                        <action selector="selectedImageClick:" destination="-1" eventType="touchUpInside" id="BkJ-Rf-GGW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BsF-Rh-KHc">
+                    <rect key="frame" x="40" y="130" width="121" height="30"/>
+                    <state key="normal" title="发送带URL的图片"/>
+                    <connections>
+                        <action selector="postImage:" destination="-1" eventType="touchUpInside" id="E04-yL-GpM"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="faP-Ud-QBl">
+                    <rect key="frame" x="87.5" y="211" width="200" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="s5O-WZ-et0"/>
+                        <constraint firstAttribute="height" constant="100" id="zse-04-ueF"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="接收到图片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kO6-sh-ZYK">
+                    <rect key="frame" x="40" y="180" width="87" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTs-xR-kbr">
+                    <rect key="frame" x="141" y="80" width="108" height="30"/>
+                    <state key="normal" title="发送选择的图片"/>
+                    <connections>
+                        <action selector="postSelectedImage:" destination="-1" eventType="touchUpInside" id="eq4-bu-uJ1"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="接收到的地理位置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Izn-37-q9E">
+                    <rect key="frame" x="40" y="321" width="139" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTW-ij-Kth">
+                    <rect key="frame" x="40" y="352" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XsP-1c-yAt">
+                    <rect key="frame" x="181" y="130" width="92" height="30"/>
+                    <state key="normal" title="发送地理位置"/>
+                    <connections>
+                        <action selector="postPosition:" destination="-1" eventType="touchUpInside" id="mWP-1T-WZJ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BsF-Rh-KHc" firstAttribute="top" secondItem="wNb-V6-OjN" secondAttribute="bottom" constant="20" id="BS6-Hg-Rnp"/>
+                <constraint firstItem="Izn-37-q9E" firstAttribute="top" secondItem="faP-Ud-QBl" secondAttribute="bottom" constant="10" id="DVp-CL-ADW"/>
+                <constraint firstItem="XsP-1c-yAt" firstAttribute="leading" secondItem="BsF-Rh-KHc" secondAttribute="trailing" constant="20" id="DXp-Rd-Z3F"/>
+                <constraint firstItem="XsP-1c-yAt" firstAttribute="top" secondItem="NTs-xR-kbr" secondAttribute="bottom" constant="20" id="PRI-kd-qwH"/>
+                <constraint firstItem="pTW-ij-Kth" firstAttribute="leading" secondItem="Izn-37-q9E" secondAttribute="leading" id="R4S-hY-Sie"/>
+                <constraint firstItem="kO6-sh-ZYK" firstAttribute="top" secondItem="BsF-Rh-KHc" secondAttribute="bottom" constant="20" id="Vkg-Hh-8hy"/>
+                <constraint firstItem="wNb-V6-OjN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="Wmg-Qd-UFF"/>
+                <constraint firstItem="wNb-V6-OjN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="gDb-Zp-iQH"/>
+                <constraint firstItem="Izn-37-q9E" firstAttribute="leading" secondItem="kO6-sh-ZYK" secondAttribute="leading" id="gqC-fy-hwW"/>
+                <constraint firstItem="faP-Ud-QBl" firstAttribute="top" secondItem="kO6-sh-ZYK" secondAttribute="bottom" constant="10" id="hMl-mI-jYk"/>
+                <constraint firstItem="pTW-ij-Kth" firstAttribute="top" secondItem="Izn-37-q9E" secondAttribute="bottom" constant="10" id="lro-AH-JOk"/>
+                <constraint firstItem="kO6-sh-ZYK" firstAttribute="leading" secondItem="BsF-Rh-KHc" secondAttribute="leading" id="p6d-MG-33D"/>
+                <constraint firstItem="faP-Ud-QBl" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qs8-Lr-fpv"/>
+                <constraint firstItem="NTs-xR-kbr" firstAttribute="leading" secondItem="wNb-V6-OjN" secondAttribute="trailing" constant="39" id="usM-uo-h0o"/>
+                <constraint firstItem="NTs-xR-kbr" firstAttribute="top" secondItem="wNb-V6-OjN" secondAttribute="top" id="xfe-u1-68N"/>
+                <constraint firstItem="BsF-Rh-KHc" firstAttribute="leading" secondItem="wNb-V6-OjN" secondAttribute="leading" id="xiQ-e8-qFf"/>
+            </constraints>
+            <point key="canvasLocation" x="1262" y="-13"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,57 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - AVOSCloud (12.3.0)
+  - AVOSCloudIM (12.3.0):
+    - AVOSCloud (= 12.3.0)
+    - AVOSCloudIM/_ARC (= 12.3.0)
+    - AVOSCloudIM/_NOARC (= 12.3.0)
+  - AVOSCloudIM/_ARC (12.3.0):
+    - AVOSCloud (= 12.3.0)
+    - AVOSCloudIM/_NOARC (= 12.3.0)
+  - AVOSCloudIM/_NOARC (12.3.0):
+    - AVOSCloud (= 12.3.0)
+  - AVOSCloudLiveQuery (12.3.0):
+    - AVOSCloud (= 12.3.0)
+    - AVOSCloudIM (= 12.3.0)
+  - LeanCloudFeedback (0.1.4):
+    - AVOSCloud
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - AVOSCloud (= 12.3.0)
+  - AVOSCloudIM (= 12.3.0)
+  - AVOSCloudLiveQuery (= 12.3.0)
+  - LeanCloudFeedback
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - AVOSCloud
+    - AVOSCloudIM
+    - AVOSCloudLiveQuery
+    - LeanCloudFeedback
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  AVOSCloud: bed104accc6fc53c3d16c3f52c8dfdff02251898
+  AVOSCloudIM: 65a95dae11b676b629da7e7b09fe3adea33cc8ad
+  AVOSCloudLiveQuery: 05437a5c6496ffc8e3e919e6a51e40663921cc87
+  LeanCloudFeedback: 16fbe51cbfac03c7460f617479b150f2ac10d5ae
+
+PODFILE CHECKSUM: f2037b69dbe08ab0c660228ed884f8ce8d8514e4
+
+COCOAPODS: 1.9.3
