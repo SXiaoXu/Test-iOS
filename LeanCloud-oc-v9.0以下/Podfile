@@ -1,0 +1,12 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, ‘8.0’
+
+target 'ChatDemo' do
+pod 'AVOSCloud', '7.3.4'
+pod 'AVOSCloudIM', '7.3.4'
+#pod 'LeanCloudFeedback', '~> 0.1.2'
+pod 'AFNetworking', '~> 3.1.0'
+pod 'AVOSCloudLiveQuery', '7.3.4'
+pod 'LeanCloudSocial', '~> 1.0.2'
+end
+
