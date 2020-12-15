@@ -20,9 +20,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         do {
             LCApplication.logLevel = .all
             try LCApplication.default.set(
-                id:  "JMBPc7y4SUPRDrOSHXjXVMN7-gzGzoHsz",
-                key: "Wib2dECd48h1FzivFrH628ju"
+                id:  "7okpvh9mfelli9fm0g3aqnpbhppk0l2705y6peyjdzun7mgn",
+                key: "jzr8813hrsk64zfnz4x1jqgqzexqf4nz5quzoiep62wjq5h8",
+                serverURL: "https://7okpvh9m.lc-cn-n1-shared.com"
             )
+//            try LCApplication.default.set(
+//                id:  "JMBPc7y4SUPRDrOSHXjXVMN7-gzGzoHsz",
+//                key: "Wib2dECd48h1FzivFrH628ju"
+//            )
         } catch {
             print(error)
         }
